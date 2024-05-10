@@ -30,6 +30,7 @@ class WeatherViewController: UIViewController, UITextFieldDelegate, DidChangeApi
     @IBAction func locationButton(_ sender: UIButton) {
         locationManager.requestLocation()
     }
+    
     // this trigger when user click on go button in the keyboard
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // this close the screen keyboard --- and trigger "textFieldDidEndEditing" and textFieldDidEndEditing
